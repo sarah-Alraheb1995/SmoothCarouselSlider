@@ -34,7 +34,7 @@ class Example extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: SmoothCarouselSlider(
+          child:  SmoothCarouselSlider(
           unSelectedWidget: (index) {
             return DayCard(
               dayName: weekDays[index],
@@ -56,11 +56,12 @@ class Example extends StatelessWidget {
             debugPrint(weekDays[index]);
           },
        
-        ),
-      ),
+        ), 
+              ),
     );
   }
 }
+
 //!=====================================================================
 class DayCard extends StatelessWidget {
   final int index;
