@@ -8,7 +8,7 @@ Create smooth slider with custom center selection widget
 ![alt text](https://raw.githubusercontent.com/sarah-Alraheb1995/SmoothCarouselSlider/master/screenshot/smooth-carousel.gif?raw=true)
 
 ## Installation
-Add smooth_carousel_slider_widget: ^1.0.0 to your pubspec.yaml dependencies. And import it:
+Add smooth_carousel_slider_widget: ^0.0.1 to your pubspec.yaml dependencies. And import it:
 ```dart
 import 'package:smooth_carousel_slider_widget/smooth_carousel_slider_widget.dart';
 
