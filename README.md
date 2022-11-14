@@ -39,7 +39,8 @@ SmoothCarouselSlider(
           ),
         ),
         unSelectedWidget: (index) => Padding(
-  padding: const EdgeInsets.symmetric(horizontal: 8),          child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: Container(
             height: 40,
             color: Colors.purpleAccent,
           ),
