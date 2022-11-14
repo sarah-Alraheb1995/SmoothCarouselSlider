@@ -15,7 +15,7 @@ Create smooth slider with custom center selection widget
 
 ## Features
 
-screenshot/smooth-carousel.gif
+https://raw.githubusercontent.com/sarah-Alraheb1995/SmoothCarouselSlider/master/screenshot/smooth-carousel.gif
 
 ## Getting started
 
