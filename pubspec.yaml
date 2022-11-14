@@ -1,7 +1,7 @@
 name: smooth_carousel_slider_widget
-description: A new Flutter package project.
+description: smooth carousel slider with selected center custom widget design.
 version: 0.0.1
-homepage:
+homepage: https://github.com/sarah-Alraheb1995/SmoothCarouselSlider.git
 
 environment:
   sdk: ">=2.15.0 <3.0.0"
