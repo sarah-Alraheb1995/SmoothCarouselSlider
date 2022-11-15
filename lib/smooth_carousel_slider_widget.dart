@@ -10,8 +10,8 @@ class SmoothCarouselSlider extends StatefulWidget {
       required this.unSelectedWidget,
       required this.selectedWidget,
       this.backgroundColor,
-      this.scale=1.2,
-      this.yOffset=30})
+      this.scale = 1.2,
+      this.yOffset = 30})
       : super(key: key);
 
   ///Number of Items in list
@@ -32,10 +32,13 @@ class SmoothCarouselSlider extends StatefulWidget {
 
   ///Selected widget
   final Widget Function(int index) selectedWidget;
+
   ///background color
   final Color? backgroundColor;
+
   ///scale applied to selected item
-  final double  scale;
+  final double scale;
+
   /// the Y offset of unSelected widget
   final double yOffset;
 
@@ -44,29 +47,27 @@ class SmoothCarouselSlider extends StatefulWidget {
 }
 
 class _SmoothCarouselSliderState extends State<SmoothCarouselSlider> {
-  
   final _scrollController = FixedExtentScrollController();
 
- late int _selectedindex ;
+  late int _selectedindex;
 
   void _scrollToIndex(int index) {
     _scrollController.jumpTo((widget.itemExtent * index.toDouble()));
   }
-  void _setSelectedIndex(int index)
-  {
-  setState(() {
-    _selectedindex=index;
-  });
+
+  void _setSelectedIndex(int index) {
+    setState(() {
+      _selectedindex = index;
+    });
   }
 
   @override
   void initState() {
     super.initState();
-     _setSelectedIndex(widget.initialSelectedIndex);
+    _setSelectedIndex(widget.initialSelectedIndex);
 
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance!.addPostFrameCallback((_) {
       _scrollToIndex(widget.initialSelectedIndex);
-     
     });
   }
 
@@ -82,9 +83,8 @@ class _SmoothCarouselSliderState extends State<SmoothCarouselSlider> {
             controller: _scrollController,
             itemExtent: widget.itemExtent,
             diameterRatio: 100,
-
             onSelectedItemChanged: (value) {
-            _setSelectedIndex(value);
+              _setSelectedIndex(value);
               if (widget.onSelectedItemChanged != null) {
                 widget.onSelectedItemChanged!(value);
               }
@@ -100,7 +100,8 @@ class _SmoothCarouselSliderState extends State<SmoothCarouselSlider> {
                           0,
                           _selectedindex == index
                               ? 0
-                              : widget.yOffset * (index - _selectedindex).abs().toDouble(),
+                              : widget.yOffset *
+                                  (index - _selectedindex).abs().toDouble(),
                         ),
                         child: index == _selectedindex
                             ? widget.selectedWidget(index)

@@ -8,6 +8,8 @@ Create smooth slider with custom center selection widget
 ![alt text](https://raw.githubusercontent.com/sarah-Alraheb1995/SmoothCarouselSlider/master/screenshot/smooth-carousel.gif?raw=true)
 
 
+![alt text](https://raw.githubusercontent.com/sarah-Alraheb1995/SmoothCarouselSlider/master/screenshot/video.mp4?raw=true)
+
 ## Usage
 
 Simply create a SmoothCarouselSlider widget, and pass the required params:
